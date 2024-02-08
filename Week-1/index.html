@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recat JS</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- This is how you will be writing in Javascript -->
+
+  <!--  <script>
+    const heading = document.createElement("h1");
+    heading.innerhtml = "Hi everyone";
+    const root = document.getElementById("root");
+    root.appendChild("heading");
+  </script> -->
+
+  <!-- This is how you will be writing in ReactJS - includes CDN links for making Recat properties available.
+   {} - this are called props , like the id, class of the respective element -->
+
+
+ <!--  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script>
+    const heading = React.createElement("h1", {}, "Hi Everyone");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
+  </script> -->
+  <!-- This is how you will be writing in ReactJS with multiple elements -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script>
+    const heading = React.createElement("h1", {
+      id: "title"
+    }, "Hi Everyone");
+
+    // created first element
+    const heading1 = React.createElement("h1", {
+      id: "title1"
+    }, "Hi Everyone");
+
+    // created second element
+    const container = Recat.createElement("div",{
+      id: "contianer"
+    },
+    [heading,heading1])
+
+    // created a thrid element which consists of the intial two elemets
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    // only one root will be there always while we create a react JS code
+    
+    root.render(container);
+  </script>
+</body>
+
+</html>
