@@ -1,0 +1,31 @@
+.header {
+  justify-content: space-between;
+  margin: 10px;
+  display: flex;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.card {
+  border: 1px solid #000;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.0e7220bf.css.map */
