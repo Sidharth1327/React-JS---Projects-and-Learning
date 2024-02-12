@@ -1,7 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .header {
+  color: #000;
+  background-color: #01a390;
+  border-radius: 5px;
   justify-content: space-between;
+  width: auto;
   margin: 10px;
+  font-weight: bold;
   display: flex;
+  box-shadow: -1px 4px 20px 14px #0003;
+}
+
+.logo {
+  width: 100px;
+  padding-left: 10px;
+}
+
+.nav-items {
+  width: auto;
+  padding: 0 10px;
 }
 
 .nav-items > ul {
@@ -10,22 +32,80 @@
 }
 
 .nav-items > ul > li {
-  padding: 10px;
+  cursor: pointer;
+  padding: 40px 10px 0 0;
+  font-size: large;
 }
 
-.logo {
-  width: 120px;
+.restaurant-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  display: flex;
 }
 
 .card {
-  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 5px;
   width: 200px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
+  box-shadow: -1px 4px 20px 14px #0003;
 }
 
 .card > img {
+  border-radius: 10px;
   width: 100%;
+}
+
+.card > span {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.card > span > h4 {
+  text-align: center;
+}
+
+.card > span > h4:first-child {
+  color: #fff;
+  background-color: #13b001;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 5px;
+  display: flex;
+}
+
+.card > span > h4:first-child .fa-star {
+  padding: 0 5px 3px 0;
+  font-size: small;
+}
+
+.footer {
+  text-align: center;
+  background-color: #01a390;
+  border-radius: 5px;
+  width: auto;
+  margin: 10px;
+  padding: 20px 10px;
+  box-shadow: -1px 4px 20px 14px #0003;
+}
+
+.footer > i {
+  padding: 0 5px;
+  font-size: smaller;
+}
+
+.fa-heart {
+  color: #8b0000;
+}
+
+.footer > strong {
+  padding-left: 5px;
+}
+
+.footer > strong > span {
+  color: #cb3600;
 }
 
 /*# sourceMappingURL=index.0e7220bf.css.map */
