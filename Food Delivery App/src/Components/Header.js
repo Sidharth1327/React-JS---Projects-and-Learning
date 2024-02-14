@@ -7,6 +7,8 @@ const Title = () => (
   </a>
 );
 
+
+//here I dont need to export the Title since its used in Header and not in App.js.
 // Header component for header section: Logo, Nav Items
 const Header = () => {
   return (
